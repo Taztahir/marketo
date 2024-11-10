@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-sans">
+    <!-- header  -->
+    <header style="background-image: url(./images/demo-marketing-case-studies-title-bg.jpg); background-size: cover;">
+        <!-- Navbar Section -->
+        <nav class="bg-transparent px-10 py-6 font-semibold">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-gray-400">
+                    <img src="./images/asset 0.webp" alt="" class="w-32">
+                </div>
+                
+                <!-- Desktop Links -->
+                <ul class="hidden md:flex space-x-10 text-gray-800">
+                    <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="./About.html" class="hover:text-gray-400">About</a></li>
+                    
+                    <!-- Dropdown Menu for Desktop (opens on hover) -->
+                    <li class="relative group">
+                        <a href="./Services.html" class="hover:text-gray-400">Services</a>
+                        <!-- <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-lg hidden group-hover:block">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Engaging Audiences</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Marketing Research</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sales Development</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Marketing Campaigns</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Social Media Analysis</a>
+                        </div> -->
+                    </li>
+    
+                    <li><a href="./Case-studies.html" class="text-gray-400">Case Studies</a></li>
+                    <li><a href="./Pricing.html" class="hover:text-gray-400">Pricing</a></li>
+                    <li><a href="./Team.html" class="hover:text-gray-400">Team</a></li>
+                    <li><a href="./Contact.html" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+                <div class="space-x-3 hidden md:flex">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr">
+                        <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+                    </a>
+                    <a href="https://x.com/home">
+                        <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <ul class="bg-white border-t border-gray-200 py-4 space-y-2 text-gray-800">
+                    <li><a href="./index.html" class="block px-6 py-2 hover:bg-gray-100">Home</a></li>
+                    <li><a href="./About.html" class="block px-6 py-2 hover:bg-gray-100">About</a></li>
+                    
+                    <!-- Mobile Dropdown (opens on click) -->
+                    <li class="relative">
+                        <button id="mobile-dropdown-toggle" class="block px-6 py-2 w-full text-left hover:bg-gray-100 focus:outline-none">
+                            Services
+                        </button>
+                        <div id="mobile-dropdown-menu" class="hidden pl-4 space-y-1">
+                            <a href="#" class="block px-6 py-2 text-sm hover:bg-gray-100">Engaging Audiences</a>
+                            <a href="#" class="block px-6 py-2 text-sm hover:bg-gray-100">Marketing Research</a>
+                            <a href="#" class="block px-6 py-2 text-sm hover:bg-gray-100">Sales Development</a>
+                            <a href="#" class="block px-6 py-2 text-sm hover:bg-gray-100">Marketing Campaigns</a>
+                            <a href="#" class="block px-6 py-2 text-sm hover:bg-gray-100">Social Media Analysis</a>
+                        </div>
+                    </li>
+    
+                    <li><a href="./Case-studies.html" class="block px-6 py-2 hover:bg-gray-100">Case Studies</a></li>
+                    <li><a href="./Pricing.html" class="block px-6 py-2 hover:bg-gray-100">Pricing</a></li>
+                    <li><a href="./Team.html" class="block px-6 py-2 hover:bg-gray-100">Team</a></li>
+                    <li><a href="./Contact.html" class="block px-6 py-2 hover:bg-gray-100">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pb-44 pt-20 md:pl-40 p-5">
+            <div class="space-y-3">
+                <h1 class="text-[#f96f4a] font-semibold" style="font-size: 17px; line-height: 20px; letter-spacing: -0.5px;">Digital marketing agency</h1>
+                <p style="font-size: 60.8px; line-height: 60.8px; letter-spacing: -2px; text-align: start;" class="font-bold">Marketing <br> case studies</p>
+            </div>
+            <div></div>
+        </div>
+        </header>
+        <section>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere totam rem ea in, omnis asperiores sit, commodi animi eius laboriosam tempore assumenda quisquam eveniet perferendis laudantium qui sequi deleniti voluptas nihil inventore? Veritatis quod sint impedit omnis! Et facere minima nostrum! Error totam delectus fugiat nesciunt quos nisi, inventore iste animi maxime, commodi vel ipsum deserunt excepturi saepe distinctio accusantium debitis in reprehenderit, dolores odit tempora quas! Dignissimos laudantium praesentium, temporibus, alias numquam quia rerum doloremque eligendi repellendus illo, quas tenetur! Molestias corrupti blanditiis fugit dolor, error, nisi recusandae, ex quod sed quisquam adipisci doloremque ducimus dignissimos quos. Possimus fugit rerum id eligendi error aut accusantium repellendus corrupti tempora est eaque, iusto omnis incidunt ullam dignissimos nesciunt officiis aliquid repellat dolorem. Quis voluptatibus tempora optio quia quas natus vitae temporibus at repellat ipsum omnis modi vero, sunt, aliquid odit voluptatum maiores consequatur libero ut nam officia nesciunt quae! Labore doloribus vitae accusantium placeat aperiam hic cupiditate eius at sapiente ducimus modi laudantium similique asperiores vel dicta iste excepturi fugit expedita aliquid autem reiciendis quod, repellendus ipsa? Iste ratione vel dicta at quod, inventore nemo labore odit eveniet non nesciunt ducimus tempore. Eaque perspiciatis a vel ut ratione quasi quidem voluptatem animi neque illum earum sunt magnam odio natus quod magni sint itaque obcaecati eius totam, minus culpa distinctio! Ut aliquam ea, nesciunt labore magni, sit et nisi assumenda eos dolorum dolores vel sequi vero a iusto temporibus ducimus libero. Consequatur atque unde dolorum tenetur repellendus officiis accusamus, minus ducimus quas blanditiis. Temporibus, voluptatum dicta nostrum, quis similique natus rem nulla dignissimos culpa placeat at tempore aspernatur, impedit unde exercitationem quibusdam numquam consectetur tenetur cum quisquam! Explicabo vel architecto nesciunt ipsum minus eos iste. Similique eligendi maxime provident animi consequatur porro sed laboriosam pariatur ab aliquid mollitia ullam impedit molestias minima saepe culpa, tempora quidem! Error magni enim quidem repellendus ea deleniti, ut aperiam pariatur officia maiores laudantium ipsam animi, voluptas modi obcaecati numquam totam quia! Consequuntur tempora eligendi fugiat at consectetur tempore, totam suscipit mollitia nostrum optio ipsum omnis, aspernatur veniam ducimus blanditiis et ea. Ducimus voluptate fugiat quia recusandae omnis. Velit voluptas ullam perspiciatis beatae. Neque aut incidunt iusto dolor atque voluptas sit repellat, illum voluptatem corrupti aliquid obcaecati. Necessitatibus minus et aliquid porro accusamus. Ad enim architecto doloremque deleniti perspiciatis adipisci labore temporibus minus iure iste veritatis atque suscipit cumque eaque autem, quia consequuntur explicabo ipsam quidem optio ipsa illum nulla! Eligendi alias quis cupiditate maxime obcaecati magni, quidem eos doloribus suscipit, excepturi minima aut totam optio vero autem accusantium eum odit consequuntur, exercitationem quia corporis laboriosam at ea! Quasi, provident quam. Blanditiis nisi quo nihil doloremque dolores quos omnis perspiciatis quaerat, praesentium delectus in excepturi qui temporibus non labore distinctio. Id asperiores sit vero dolorum veniam molestias quo sunt nesciunt quis optio nemo reprehenderit labore, in, eius quidem voluptatum, harum facere aspernatur fuga dignissimos! Sapiente ab explicabo facilis reprehenderit nisi dolorum aliquam modi velit deleniti eos distinctio blanditiis, tenetur maxime voluptatum culpa quos beatae alias aliquid eveniet recusandae! Nisi veritatis quasi, praesentium voluptatum vitae magni repellendus quisquam ullam reiciendis et rerum quidem? Quis, quos officiis, voluptatibus quasi totam vero dignissimos aperiam voluptatum ex incidunt cupiditate rem perferendis ducimus exercitationem repellendus autem nemo necessitatibus. Provident, non! Ullam quibusdam maiores cum qui iure. Ab odit totam similique magnam tempore adipisci natus consectetur velit facilis veniam exercitationem voluptas a eos soluta ipsa, eveniet quod tempora dolor corporis incidunt possimus earum alias. Obcaecati perspiciatis est, culpa, eum similique odit aliquid perferendis voluptate asperiores nisi, molestiae aperiam optio recusandae itaque? Laudantium repellat nesciunt asperiores ab aperiam officiis quia, fugiat iure consequatur, at, nam aliquid quasi alias perspiciatis nemo dicta repudiandae inventore. Quas eum voluptate eveniet vero sint molestias est quam nemo facilis fugit? Earum, quisquam ipsam enim vitae asperiores repudiandae sunt! Eius dicta minus, vel quam rerum voluptas provident! Distinctio cum, totam repellendus iusto quis ea ex ipsum commodi libero quia eius numquam in laudantium, corrupti atque eos quod, explicabo sapiente. Vel deleniti inventore quaerat illo est perspiciatis. Odit sint dolores veritatis labore iusto blanditiis sed, eaque ea ratione vero obcaecati dignissimos architecto, similique vel tenetur recusandae dolor! Ratione expedita ipsam, tempora tenetur amet placeat repudiandae quis temporibus. Vitae voluptatem commodi numquam aperiam quibusdam dicta ipsam at laboriosam in consectetur debitis non voluptates quis eius autem ullam sint dolorem iure, vel harum. Iusto sit dolores quos, reprehenderit qui ut, a aliquam adipisci veritatis id magnam quis odit, sunt accusamus nam facilis voluptate cum! Repellat, eum sequi eligendi voluptatem ea et, quis pariatur sunt tempora dignissimos vel enim? Voluptate odio velit ullam iure qui libero eius soluta officiis voluptatum ducimus pariatur voluptates corrupti aliquid, autem eligendi accusantium, nulla iusto modi quia amet excepturi tempora, aut molestiae? Distinctio, enim. Iste blanditiis repudiandae possimus officia, nemo alias dicta aspernatur minus pariatur autem? Ducimus repellendus quisquam enim laudantium nulla asperiores odio culpa nesciunt, incidunt, at iste unde ex fugiat? Aliquid, architecto perspiciatis? Doloribus, pariatur vitae nemo quis odit accusamus. Laudantium dicta ipsum dolorem porro est fugit sunt numquam iure illum, alias dignissimos dolores sit quis nihil, voluptatum in expedita adipisci consequuntur distinctio! Dignissimos ab sapiente consequuntur. Repellat odio, ea doloremque itaque exercitationem esse dolores? Ab porro quasi laboriosam nesciunt! Minima, rerum. Tempora consequuntur impedit adipisci dicta quibusdam tempore, mollitia fugit magnam earum temporibus necessitatibus animi tenetur et dolorem facere, rerum totam voluptate quam vero corrupti ipsam ducimus alias sit veritatis. Officia error exercitationem debitis facilis, dolorem iusto nihil culpa eaque doloremque, velit qui facere nisi recusandae ea, architecto cumque! Cum adipisci eveniet perferendis fuga minus facilis velit quidem facere dolor doloremque atque exercitationem culpa dolorum veniam dolore, ullam earum delectus aliquam nulla temporibus quae aspernatur! Iste non, ad maxime, praesentium reprehenderit quia eum quo totam ipsam incidunt repellendus ipsa esse corrupti neque autem porro. Dolores enim pariatur veniam commodi numquam ipsa unde. Illum dicta facilis exercitationem nobis magnam! Voluptatum corrupti quod, adipisci id quaerat et voluptates quos placeat consectetur enim cumque nam, laborum laudantium labore ad voluptatibus unde eius numquam beatae porro blanditiis dolorum! Alias animi aut eos, praesentium deserunt commodi rerum voluptatum modi quos tempora laborum ullam esse minima porro aliquam, vitae fugiat reiciendis? Sed tempore in voluptate, distinctio alias et. Modi optio eum laborum ut, mollitia corrupti accusamus tenetur quo tempore nihil dolor nobis at quis velit debitis dicta cupiditate illo libero dolore qui quos impedit neque dolorem doloremque! Obcaecati, exercitationem consequatur! Facere eius, molestias et expedita accusantium impedit maxime nam ex iste fugiat est velit distinctio? Libero officiis labore numquam vel. Praesentium ab dicta vitae dignissimos, ducimus odio nostrum iure fugiat dolore sunt, mollitia explicabo. Optio praesentium voluptatum laboriosam debitis doloremque officiis dolorem harum, expedita, quo, accusantium ratione. Ipsa sint ratione illum architecto cumque aliquam. Corrupti tenetur, distinctio eligendi maiores quisquam recusandae numquam quas ipsum, aperiam ipsam quos possimus asperiores. Inventore officiis eius ab iusto, nostrum molestiae animi nam officia autem placeat accusantium dicta possimus quae magni dolorem perspiciatis repellat sapiente. Modi minima laboriosam est, vel omnis aliquid quibusdam rem delectus repudiandae dolore iure mollitia porro illum quis inventore nihil at illo voluptates voluptatum alias possimus ipsa eaque impedit. Nobis sit, tempore porro animi repellendus ex est quod maxime maiores soluta officia natus? Laborum, dignissimos corrupti nam facilis libero aperiam recusandae nihil impedit excepturi adipisci delectus veritatis maxime et tenetur quam similique debitis dolores reiciendis possimus unde modi cupiditate iure? Ipsam expedita mollitia in vel et. Debitis, tenetur! Praesentium animi eveniet nobis reprehenderit aliquid dolore voluptatem labore sit exercitationem. Incidunt beatae aut impedit aliquam repudiandae asperiores. Ipsa aperiam, officiis beatae laudantium, nihil magni perspiciatis, earum aut atque molestias esse quasi eos ducimus autem nulla optio culpa neque. Repellendus numquam suscipit perferendis ea vitae natus officiis? Totam quaerat voluptatum cum sapiente explicabo velit provident id est rerum, illum ut architecto necessitatibus vel suscipit sint! Repellat aspernatur atque neque necessitatibus, impedit officia illum velit maxime ipsa odit saepe! Sed error quibusdam, dolore doloribus impedit voluptates fugiat blanditiis odit reiciendis, alias inventore reprehenderit. Esse laborum ab doloremque obcaecati ea quaerat, magnam nam delectus maxime voluptates non numquam! Reiciendis molestias corporis doloremque velit, recusandae laborum quae id nam pariatur maxime distinctio dolore quam ipsa. Exercitationem nulla nam repellat voluptatum totam temporibus quas dignissimos saepe animi aut, voluptas earum! Sint unde repellendus, veritatis, commodi possimus inventore ex corrupti odio ullam earum iste dolore obcaecati sequi atque sapiente? Veritatis commodi eius ratione cupiditate labore sint eos quibusdam nihil magnam eligendi, ab soluta ducimus distinctio nemo totam asperiores delectus voluptates eaque ullam autem. Animi quasi ratione adipisci aut tempore neque rem similique vero totam, alias doloremque officia nam et culpa suscipit quae repudiandae, modi a! Reprehenderit exercitationem et architecto odit numquam ex explicabo, amet saepe laudantium quis aspernatur atque quidem magnam quam ipsum quas quibusdam laboriosam debitis, dolor optio nesciunt! Nostrum rerum modi obcaecati fugit aliquam eum optio excepturi iure fuga aut itaque quae, sint, atque tempora repudiandae voluptatum sapiente iste dignissimos sunt nisi accusamus tenetur? Provident, accusantium quasi omnis enim perspiciatis dicta rem? Neque non illum accusamus ipsam pariatur obcaecati quasi ad facere adipisci eum quo, sed officia amet deleniti. Architecto dicta veritatis sapiente blanditiis voluptates eligendi doloribus at quidem suscipit. Tempora dolores, consequuntur amet sed saepe quia modi quisquam quam deserunt ipsa ullam et. Velit totam aperiam non repudiandae exercitationem ipsa laborum animi ab ullam, beatae fuga, voluptates deserunt neque sequi nobis obcaecati vero, architecto ducimus distinctio! Provident quisquam maxime, magnam neque sunt aspernatur quae deleniti nulla dicta dolorem voluptatem aut sint modi sequi sapiente illum reprehenderit iusto suscipit unde ea saepe! Tempora vel natus dignissimos quis corporis suscipit harum sequi ipsa, cupiditate ullam dolorum repudiandae, pariatur hic optio atque! Commodi obcaecati ducimus, alias ad illo vel ex dolorem, perferendis eos impedit deserunt hic voluptatum ratione ut cum quas doloremque, saepe maxime debitis fugit tenetur. Libero in eaque neque corporis voluptates voluptatibus dolorum ipsam dolor nulla explicabo. Provident modi nostrum quos necessitatibus accusantium consequatur harum possimus autem architecto dicta officiis quae delectus pariatur, aliquam reprehenderit. Temporibus, rerum consequuntur voluptatum et nulla accusamus alias saepe quisquam natus reprehenderit consequatur dolore eveniet velit nostrum suscipit. Pariatur reprehenderit odit ipsum, omnis consequatur nostrum veniam possimus illo quam architecto recusandae natus doloremque, excepturi sunt praesentium officia perspiciatis incidunt. Pariatur doloribus quibusdam in sint atque unde aut, ab dolorum voluptatem rem, sit ut reiciendis aliquam optio saepe accusamus enim id corrupti possimus dolores ad odio. Nostrum similique, tempore corporis magnam ullam quibusdam delectus facilis, inventore quod, voluptates non incidunt! Doloribus commodi nostrum hic sequi cupiditate, explicabo eaque animi illum? Illum alias voluptatibus dignissimos laboriosam natus aspernatur quod obcaecati, quos, illo, blanditiis beatae! Quibusdam natus debitis nesciunt quidem eveniet minus saepe harum excepturi officiis deserunt itaque, at vel officia cum corrupti! A doloribus temporibus rem atque ipsum? Voluptatibus doloribus voluptatem totam maiores ut itaque excepturi iure, sunt consequatur? Magnam autem et neque corporis, commodi ea accusantium rerum excepturi accusamus sint tempore, quia aliquam natus exercitationem minus explicabo fugit labore ex aut iste corrupti praesentium! Doloribus molestias dolorem libero eaque maxime quam nihil modi accusantium tempore dignissimos corporis architecto, quibusdam in distinctio ex, suscipit deleniti sed voluptatibus nostrum. Dolores adipisci culpa sequi earum voluptas nemo. Magni, eaque officia voluptatibus rerum inventore laboriosam. Quod deleniti cum ratione aspernatur labore adipisci distinctio eius odio eos fugit! Aliquam excepturi maxime laborum placeat? Deserunt alias iste, quod eligendi dicta, atque consequatur recusandae facilis tenetur molestiae in tempora consequuntur expedita fuga. Molestiae velit minima explicabo eum eveniet, sint in iure natus ut eius culpa similique incidunt, voluptates totam! Earum quaerat quo magnam ullam numquam dolore dolor non impedit cupiditate possimus, cumque explicabo facilis dignissimos eos ea repellendus veniam, odit nulla aspernatur. Magnam explicabo est, voluptas labore quos consequuntur rem voluptate, aperiam, nihil corporis sapiente! Dignissimos nobis consequatur, architecto magnam facilis quia, quae accusantium quos facere dolore voluptate? Ullam sit blanditiis quidem, hic eius odit ad amet mollitia nemo quas sequi recusandae fuga autem non modi aliquid ab repellendus labore, impedit, fugit assumenda nulla. Ea placeat obcaecati unde eaque voluptates fugit consequatur deleniti maxime, voluptate est quod magnam pariatur illum ipsam esse, repudiandae hic libero modi eligendi delectus perferendis? Porro, et!
+        </section>
+        <!-- footer  -->
+     <div class="bg-[#f96f4a] py-6 flex justify-between px-14 rounded-md translate-y-12 mx-20 ">
+        <div class="text-white text-4xl font-semibold">
+            Let's talk about how we can <br> transform your business!
+        </div>
+        <div class="flex space-x-5">
+            <!-- message logo  -->
+            <div class="bg-gray-500 opacity-30 p-5 rounded-full">
+                <ion-icon name="mail-open-outline" class="text-white text-4xl"></ion-icon>
+            </div>
+            <div>
+                <h1 class="text-white text-xl">Interested in working?</h1>
+                <a href="malito:hello@domain.com" class="text-black text-3xl underline font-semibold hover:text-white">hello@domain.com</a>
+            </div>
+        </div>
+     </div>
+     <!-- Responsive Footer with Tailwind CSS -->
+     <!-- Responsive Footer with Tailwind CSS -->
+     <footer>
+        <!-- Tailwind CSS Footer - Closely Matching Provided Design -->
+<footer class="bg-gray-900 text-gray-400 py-10 md:px-10">
+    
+        <!-- Footer Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left py-10">
+            
+            <!-- Column 1: Logo and Social Icons -->
+            <div class="">
+                
+                    <img src="./images/demo-marketing-logo-white@2x.png" alt="" class="w-[150px]">
+                <div class="flex space-x-4 pt-10 justify-center md:justify-start text-gray-400">
+                    <a href="#" class="hover:text-white">Fb.</a>
+                    <a href="#" class="hover:text-white">Ig.</a>
+                    <a href="#" class="hover:text-white">Tw.</a>
+                    <a href="#" class="hover:text-white">Be.</a>
+                </div>
+            </div>
+
+            <!-- Column 2: London Office Information -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-2">Marketo - London</h3>
+                <p class="leading-relaxed">401 Broadway, 24th Floor,<br> Orchard View, London, UK</p>
+                <p class="mt-2 flex items-center justify-center md:justify-start">
+                    <span class="material-icons text-white mr-2 mt-1"><ion-icon name="call-outline"></ion-icon></span>
+                    <span>123 456 7890</span>
+                    <span class="bg-gray-700 text-xs text-white rounded-full px-2 ml-2">FREE</span>
+                </p>
+            </div>
+
+            <!-- Column 3: France Office and Newsletter Subscription -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-2">Marketo - France</h3>
+                <p class="leading-relaxed">27 Eden Walk Eden Centre,<br> Orchard View, Paris, France</p>
+                <p class="mt-2 flex items-center justify-center md:justify-start">
+                    <span class="material-icons text-white mr-2 mt-1"><ion-icon name="call-outline"></ion-icon></span>
+                    <span>123 456 7890</span>
+                    
+                </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white">Subscribe to our newsletter</h3>
+                <form class="mt-2 flex max-w-xs mx-auto md:mx-0 border">
+                    <input type="email" placeholder="Enter your email..." class="w-full px-4 py-2 bg-transparent text-gray-300 rounded-l-md focus:outline-none" />
+                    <button type="submit" class=" text-white px-4 py-2 rounded-r-md">Submit</button>
+                </form>
+                <p class="mt-2 text-gray-500">Protecting your privacy</p>
+                </div>
+                
+            
+        </div>
+        
+    <div class="flex justify-between pt-10 border-t border-gray-500 ">
+        <!-- Bottom Navigation Links -->
+        <div class=" border-gray-700 text-center text-sm space-x-10">
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">Home</a>
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">About</a>
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">Services</a>
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">Case studies</a>
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">Pricing</a>
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">Team</a>
+            <a href="#" class="text-gray-500 text-[15px] hover:text-[#f96f4a] ">Contact</a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="pt-1 text-gray-500 text-lg">
+            © 2024 Crafto is Powered by <a href="#" class="underline text-white text-lg">ThemeZaa</a>
+        </div>
+    </div>
+        
+    </div>
+</footer>
+
+     </footer>
+        
+        <script src="script.js"></script>
+</body>
+</html>
